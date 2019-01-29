@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+declare var $: any;
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @Component({
   selector: 'app-contact',
