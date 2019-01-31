@@ -1,0 +1,73 @@
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
+
+.mat-h1{
+  text-align: center;
+}
+
+
+.centered {
+  font-size: 30px;
+  text-shadow:1px 1px 2px rgba(000,000,000,0.9);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.kontainer {
+  margin-top:-25px;
+  width:100%;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+img{
+  height:250px;
+  animation:zoomin 300s linear infinite;
+}
+
+@keyframes zoomin {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.5);}
+  100% {transform: scale(1);}
+}
+
+.purp{
+  vertical-align: middle;
+  color:white;
+  text-align: center;
+  background:#1b0c2d;;
+  height:200px;
+  border-bottom:4px solid #fcf9f1;
+  border-top:4px solid #fcf9f1
+}
+
+
+.twirltext{
+  position: relative;
+top: 50%;
+transform: translateY(-50%);
+}

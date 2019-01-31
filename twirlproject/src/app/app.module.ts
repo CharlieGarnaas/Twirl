@@ -15,6 +15,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
+import {  MatListModule } from '@angular/material';
 
 
 
@@ -27,6 +28,9 @@ const appRoutes: Routes = [
   },
   {
     path: 'portfolio', component: PortfolioComponent, data: { title: 'portfolio' }
+  },
+  {
+    path: 'expertise', component: ExpertiseComponent, data: { title: 'expertise' }
   },
   {
     path: '', redirectTo: '/app', pathMatch: 'full' }

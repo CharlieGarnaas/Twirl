@@ -1,5 +1,18 @@
+<div class='kontainer'>
+    <img src='/assets/Background.png' alt="Snow" style="width:100%;">
+  <div class='centered'>DISTINCTIVELY DESIGNED & ELEGANTLY EXECUTED EVENTS </div>
+  </div>
+
+  <div class='purp'>
+    <p class='twirltext' >We are Twirl, a boutique, family-owned, women-run event planning agency       <br>creating stunning events from coast to coast.
+
+      We will change the way you plan, stage and execute your next memory in the making, and       <br>the way your guest experiences, enjoys and recalls your next big moment in the spotlight.</p>
+  </div>
+
+
+
 <div class="grid-container">
-  <h1 class="mat-h1">Dashboard</h1>
+  <h1 class="mat-h1">Gallery</h1>
   <mat-grid-list cols="2" rowHeight="350px">
     <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
       <mat-card class="dashboard-card">
@@ -16,9 +29,15 @@
           </mat-card-title>
         </mat-card-header>
         <mat-card-content class="dashboard-card-content">
-          <div>Card Content Here</div>
+          <div>
+            <!-- Placeholder -->
+            <img style='height: 100%; width: 100%; object-fit: contain' src="./assets/lips.png">
+            <!-- Placeholder -->
+          </div>
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
 </div>
+<br>
+<br>
