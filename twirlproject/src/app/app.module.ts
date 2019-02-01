@@ -33,7 +33,7 @@ const appRoutes: Routes = [
     path: 'expertise', component: ExpertiseComponent, data: { title: 'expertise' }
   },
   {
-    path: '', redirectTo: '/app', pathMatch: 'full' }
+    path: '', redirectTo: '/', pathMatch: 'full' }
 ];
 
 
@@ -65,7 +65,8 @@ const appRoutes: Routes = [
         { path: 'contact', component: ContactComponent },
         { path: 'portfolio', component: PortfolioComponent },
         { path: 'culture', component: CultureComponent },
-        { path: 'expertise', component: ExpertiseComponent }
+        { path: 'expertise', component: ExpertiseComponent },
+        { path: 'nav', component: NavComponent },
       ]
     ),
     MatGridListModule,

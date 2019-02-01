@@ -61,8 +61,8 @@ img{
   text-align: center;
   background:#1b0c2d;;
   height:200px;
-  border-bottom:4px solid #fcf9f1;
-  border-top:4px solid #fcf9f1
+  border-bottom:3px solid #fcf9f1;
+  border-top:3px solid #fcf9f1
 }
 
 
@@ -70,4 +70,5 @@ img{
   position: relative;
 top: 50%;
 transform: translateY(-50%);
+padding:40px;
 }
