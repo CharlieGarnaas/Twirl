@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ContactComponent } from './contact.component';
+import { describe } from 'node_modules/jasmine';
+import { expect } from 'node_modules/jasmine';
 
 describe('ContactComponent', () => {
   let component: ContactComponent;

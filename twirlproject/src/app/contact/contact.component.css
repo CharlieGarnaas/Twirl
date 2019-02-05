@@ -5,3 +5,8 @@ form{
 h2{
   text-align: center;
 }
+
+#sendButton{
+  width:151px;
+}
+

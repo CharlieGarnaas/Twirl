@@ -6,3 +6,43 @@
 .navbar-brand{
   color:white!important;
 }
+
+
+/* .word {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 10em;
+  font-family: Helvetica;
+  font-weight: 300;
+  color: black;
+  transition: color 1s;
+  text-shadow: 2px 2px purple;
+  color:#b3446c;
+}
+
+.word.out {
+  color: orange;
+}
+
+.l {
+  display: inline-block;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+  backface-visibility: hidden;
+}
+
+.l.out {
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateX(360deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+} */

@@ -1,20 +1,49 @@
-<h2>Contact</h2>
-<form>
-    <!-- name -->
-    <div class="field">
-      <input type="text" name="name" class="input" placeholder="Your Name" (ngModel)="Name">
+<!-- Default form contact -->
+<form class="text-center border border-light p-5" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+  <p class="h4 mb-4">Contact us</p>
+  <!-- Name -->
+  <input type="text" formControlName="contactFormName" id="defaultContactFormName" mdbInputDirective
+    class="form-control mb-4" placeholder="Name">
+
+  <!-- Email -->
+  <input type="email" formControlName="contactFormEmail" id="defaultContactFormEmail" mdbInputDirective
+    class="form-control mb-4" placeholder="E-mail">
+
+
+  <!-- Message -->
+  <div class="form-group">
+    <textarea formControlName="contactFormMessage" class="form-control rounded-0" mdbInputDirective id="exampleFormControlTextarea2"
+      rows="3" placeholder="Message"></textarea>
+  </div>
+
+  <!-- Copy -->
+
+
+  <!-- Send button -->
+  <button mdbBtn color="info" outline="true" block="true" data-toggle="modal" class="btn btn-success" id="sendButton"
+    mdbWavesEffect type="submit" data-target="#exampleModalCenter" [disabled]="disabledSubmitButton">Send</button>
+
+<!-- MODAL -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Thank You!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            We appreciate your message, we will respond to you inquiry shortly!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- MODAL -->
 
-    <!-- email -->
-    <div class="field">
-      <input type="email" name="email" class="input" placeholder="Your Email" (ngModel)="email">
-    </div>
-
-    <!-- message -->
-    <div class="field">
-      <textarea class="textarea" name="message" placeholder="What's on your mind?" (ngModel)="message"></textarea>
-    </div>
-
-    <button type="submit" class="button is-danger is-large">Submit</button>
-
-  </form>
+</form>
+<!-- Default form contact -->

@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { describe } from 'node_modules/jasmine';
+import { nodemailer } from 'node_modules/nodemailer';
+import { HttpClientModule } from '@angular/common/http';
 declare var $: any;
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,6 +19,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
 import {  MatListModule } from '@angular/material';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 
 
@@ -52,7 +58,9 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     MatToolbarModule,
     MatExpansionModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    MatFormFieldModule
  ],
   imports: [
     BrowserModule,
@@ -60,6 +68,9 @@ const appRoutes: Routes = [
     MatToolbarModule,
     MatExpansionModule,
     AppRoutingModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    HttpClientModule,
     RouterModule.forRoot(
       [
         { path: 'contact', component: ContactComponent },
@@ -74,9 +85,13 @@ const appRoutes: Routes = [
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
-    LayoutModule
+    LayoutModule,
+    ReactiveFormsModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}
