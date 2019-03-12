@@ -21,13 +21,14 @@ import { LayoutModule } from '@angular/cdk/layout';
 import {  MatListModule } from '@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { TwirlhomeComponent } from './twirlhome/twirlhome.component';
 
 
 
 
 const appRoutes: Routes = [
   {
-    path: 'app', component: AppComponent, data: { title: 'Home' }
+    path: 'app', component: AppComponent, data: { title: 'twirlhome' }
   },
   {
     path: 'contact', component: ContactComponent, data: { title: 'contact' }
@@ -39,7 +40,11 @@ const appRoutes: Routes = [
     path: 'expertise', component: ExpertiseComponent, data: { title: 'expertise' }
   },
   {
-    path: '', redirectTo: '/', pathMatch: 'full' }
+    path: 'expertise', component: TwirlhomeComponent, data: { title: 'expertise' }
+  },
+
+  {
+    path: '', redirectTo: '/twirlhome', pathMatch: 'full' }
 ];
 
 
@@ -51,7 +56,8 @@ const appRoutes: Routes = [
     PortfolioComponent,
     ContactComponent,
     CultureComponent,
-    ExpertiseComponent
+    ExpertiseComponent,
+    TwirlhomeComponent
   ],
   exports: [
     BrowserModule,
@@ -73,6 +79,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(
       [
+        { path: 'twirlhome', component: TwirlhomeComponent },
         { path: 'contact', component: ContactComponent },
         { path: 'portfolio', component: PortfolioComponent },
         { path: 'culture', component: CultureComponent },

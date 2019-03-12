@@ -1,4 +1,5 @@
 <!-- Default form contact -->
+
 <form class="text-center border border-light p-5" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
 
   <p class="h4 mb-4">Contact us</p>
@@ -25,7 +26,11 @@
     mdbWavesEffect type="submit" data-target="#exampleModalCenter" [disabled]="disabledSubmitButton">Send</button>
 
 <!-- MODAL -->
+
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="pyro">  <!--fireworks animation starts here-->
+            <div class="before"></div>
+            <div class="after"></div>
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -43,7 +48,9 @@
         </div>
       </div>
     </div>
+  </div>
     <!-- MODAL -->
 
 </form>
+
 <!-- Default form contact -->

@@ -11,6 +11,5 @@ declare var $: any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // title = 'twirlproject';
 }
 

@@ -3,12 +3,17 @@
 @import "~font-awesome/css/font-awesome.css";
 
 
-html, body { height: 100%; }
+
+/* html, body { height: 100%; } */
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 body {
   padding-top: 5rem;
+  min-height: 400px;
+  margin-bottom: 150px;
+  clear: both;
 }
+
 .starter-template {
   padding: 3rem 1.5rem;
   text-align: center;
@@ -18,3 +23,29 @@ body {
 button{
   outline: none!important;
 }
+
+.navbar-light .navbar-toggler{
+  color:black!important;
+  border-color:rgb(252, 249, 241);
+}
+
+.centered{
+  font-family: 'montserratlight',sans-serif;
+  /* font-weight: lighter; */
+  letter-spacing: 5px;
+}
+
+
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+
+

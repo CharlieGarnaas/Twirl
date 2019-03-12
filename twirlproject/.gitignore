@@ -6,6 +6,8 @@
 /out-tsc
 
 # dependencies
+/server.js
+/testing.js
 /node_modules
 
 # profiling files

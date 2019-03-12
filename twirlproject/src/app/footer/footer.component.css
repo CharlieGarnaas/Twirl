@@ -1,0 +1,55 @@
+
+.twirlfooter{
+  outline: none;
+}
+.nav-link{
+  margin-left:20px!important;
+  margin-right:20px!important;
+}
+
+.nav-item{
+  font-size:30px;
+}
+
+#links:hover{
+  transform: scale(1.5);
+}
+
+.navbar{
+  background: #fcf9f1!important;
+}
+
+.navbar-text{
+  display:flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height:70px;
+}
+
+.twirlfooter{
+  object-fit:scale-down;
+  width:12%;
+}
+
+nav{
+  height:relative;
+  background: #fcf9f1!important;
+}
+
+
+.navbar-text[_ngcontent-c2] {
+  background: #fcf9f1!important;
+}
+

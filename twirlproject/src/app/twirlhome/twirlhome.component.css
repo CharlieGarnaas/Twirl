@@ -1,0 +1,215 @@
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
+
+.mat-h1{
+  text-align: center;
+}
+
+
+.centered {
+  font-size: 30px;
+  text-shadow:1px 1px 2px rgba(000,000,000,0.9);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.kontainer {
+  margin-top:-25px;
+  width:100%;
+  /* display: inline-block; */
+  overflow: hidden;
+  position: relative;
+  /* text-align: center; */
+  /* color: white; */
+  background: #ee0979;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+i{
+  /* padding-top:30px; */
+  padding:10px;
+  padding-bottom:10px;
+}
+
+.fa:before{
+  margin-right:5px;
+}
+
+
+ span{
+  font-family: 'Caveat', sans-serif;
+  letter-spacing: 7px;
+  font-weight:lighter!important;
+  text-transform: capitalize;
+  padding-right:10px;
+}
+
+.purp{
+  margin:0 auto;
+  width:95%;
+  color:white;
+  /* text-align: center; */
+  height:200px;
+  min-height:324px;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+ .leftIcons{
+/* display:block; */
+/* margin:10px; */
+float:left;
+}
+
+.rightIcons{
+  /* margin:10px; */
+  /* display:block; */
+  float:right;
+}
+
+
+.twirltext {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding:40px;
+}
+
+
+.dotsbackground{
+  display: table-cell;
+  background: white;
+  background-image:
+    radial-gradient(#fdf6ed 20%, transparent 0),
+    radial-gradient(#fdf6ed 20%, transparent 0);
+  background-size: 100px 100px;
+  background-position: 0 0, 50px 50px;
+  height:500px!important;
+  width:100%!important;
+  vertical-align: middle;
+  text-align: center;
+  padding-bottom:20px;
+}
+
+.dotText{
+  display: inline-block;
+  padding:15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+h3{
+  font-weight: bold;
+}
+img{
+  height:250px;
+  animation:zoomin 300s linear infinite;
+}
+
+
+.dotsbackground{
+  font-family: 'montserratregular',sans-serif;
+  letter-spacing: 4px;
+  font-weight:lighter!important;
+}
+
+
+.title {
+	font-family: "Montserrat";
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 30vh;
+  letter-spacing: 1px;
+  padding-top:45px;
+  margin-bottom:20px;
+}
+
+h1 {
+	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+  font-size: 30px;
+  margin: 10px 0;
+  font-family: 'Luckiest Guy', sans-serif;
+  letter-spacing: 4px;
+  font-weight:900;
+}
+/* styling my button */
+
+.white-mode {
+	text-decoration: none;
+	padding: 7px 10px;
+	background: #ee0979;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border-radius: 3px;
+	color: #FFF;
+	transition: .35s ease-in-out;
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	font-family: "Montserrat";
+}
+
+.white-mode:hover {
+	background-color: #FFF;
+	color: #122;
+}
+
+
+li{
+  list-style-type: none;
+}
+
+@media screen and (min-width: 900px) {
+  .purp{
+    margin:0 auto;
+    width:65%;
+    color:white;
+    /* text-align: center; */
+    height:200px;
+    min-height:324px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: middle;
+  }
+}
+
+@keyframes fun {
+  from{background:red}
+  to{background:blue;}
+}

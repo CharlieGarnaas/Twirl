@@ -4,45 +4,28 @@
 
 
 .navbar-brand{
-  color:white!important;
+  color:black!important;
 }
 
 
-/* .word {
-  display: inline-block;
-  margin: 0 auto;
-  font-size: 10em;
-  font-family: Helvetica;
-  font-weight: 300;
-  color: black;
-  transition: color 1s;
-  text-shadow: 2px 2px purple;
-  color:#b3446c;
+.navbar-light .navbar-nav .nav-link{
+border-bottom: 3px solid #1a1528;
+margin-right:10px;
+color:black!important;
 }
 
-.word.out {
-  color: orange;
+.navbar{
+  background: #fcf9f1!important;
+  color:black!important;
 }
 
-.l {
-  display: inline-block;
-  float: left;
-  transform: translateZ(25px);
-  transform-origin: 50% 50% 25px;
-  backface-visibility: hidden;
+img{
+  outline: none!important;
 }
 
-.l.out {
-  animation-name: spin;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
+li{
+  text-transform:uppercase;
+  font-family: 'montserratregular',sans-serif;
+  letter-spacing: 2px;
+  font-weight:270;
 }
-
-@keyframes spin {
-  from {
-    transform: rotateX(360deg);
-  }
-  to {
-    transform: rotateX(0deg);
-  }
-} */
